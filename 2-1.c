@@ -19,4 +19,10 @@ int main()
 	printf("%d\n", UINT_MAX); //unsigned int max
 	printf("%d\n", INT_MAX);  // int max
 	printf("%d\n", INT_MAX);  // int min
+
+	printf("%f\n", FLT_MAX);
+	printf("%f\n", -FLT_MAX);
+
+	printf("%f\n", DBL_MAX);
+	printf("%f\n", -DBL_MAX);
 }
