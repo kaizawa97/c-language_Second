@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAX 100
-#define change 87
+#define changesmallcap 87
 
 int htol(char c[]);
 
@@ -14,6 +14,7 @@ int main(void)
 		++i;
 	}
 	htol(c);
+	// return 0;
 }
 int htol(char c[])
 {
@@ -48,7 +49,7 @@ int htol(char c[])
 
 		if (c[maxcount] >= 'a' && c[maxcount] <= 'f')
 		{
-			number = c[maxcount] - change;
+			number = c[maxcount] - changesmallcap;
 			number = number * n;
 			plusnumber += number;
 			n = n * multinumber;
@@ -61,5 +62,5 @@ int htol(char c[])
 			n = n * multinumber;
 		}
 	}
-	printf("%d", plusnumber);
+	// return plusnumber;
 }
